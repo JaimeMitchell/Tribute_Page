@@ -10,7 +10,6 @@
 }
 
 .masthead {
-   
 }
 
 .page-title {
@@ -21,38 +20,23 @@
 
 .main-content {
     
+    
 }
 
 .sidebar {
-}
+   
 
 .footer {
     
+    
 }
 @media screen and (min-width: 34em) {
-    .site{
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-areas:
-        "title title title"
-        "main header header"
-        "main sidebar footer";
-    }
+   
 }
 .child {
     padding: 20px;
     text-align: center;
 }
-
-.child1{background-color: #009DAE;}
-.child2 {background-color: #71DFE7;}
-.child3 {background-color: #C2FFF9;}
-.child4 {background-color: #FFE652;}
-.child5 {background-color: #66806A;}
-.child6 {background-color: #B4C6A6;}
-.child7 {background-color: #FFC286;}
-.child8 {background-color: #FFF1AF;}
-.child9 {background-color: #FF6D6D;}
-.child10 {background-color: #AE4CCF;}
 
 
 .parent {
