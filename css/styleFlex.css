@@ -1,72 +1,17 @@
 .site {
-    display:flex;
-    justify-content:center;
-    height: 500px;
+    display: flex;
     border: solid 5px red;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-
+    background-image: url(../shellBackground.jpg);
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
 }
 
-.masthead {
-}
+.masthead {}
 
-.page-title {
-    
-   
+.page-title {}
 
-}
+.main-content {}
 
-.main-content {
-    
-    
-}
+.sidebar {}
 
-.sidebar {
-   
-
-.footer {
-    
-    
-}
-@media screen and (min-width: 34em) {
-   
-}
-.child {
-    padding: 20px;
-    text-align: center;
-}
-
-
-.parent {
-    height: 500px;
-    border: solid 5px red;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.child1 {
-    /* align-self: center; */
-    flex-grow: 1;
-}
-.child2 {
-    flex-grow: 1;
-}
-
-.child3 {
-    flex-grow: 2;
-}
-
-.parent2 {
-    display: flex;
-}
-.parent2 img {
-    width: 500px;
-    margin-right:  20px;
-}
-
-.parent2 p {
-    align-self: center;
-}
+.footer {}
