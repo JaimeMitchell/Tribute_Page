@@ -1,16 +1,20 @@
 .site {
-    display: flex;
-    border: solid 5px red;
-    background-image: url(../shellBackground.jpg);
+    display:grid;
+    background-image: url(../shellBackground.jpg) ;
+    background-size: contain;
     background-repeat: no-repeat;
-    justify-content: space-evenly;
+    grid-template-columns: min-content;
+
 }
+
 
 .masthead {}
 
 .page-title {}
 
-.main-content {}
+.main-content {display: flex;}
+.main-content p, h1, h2, li{font-size: 14pt;
+color:antiquewhite}
 
 .sidebar {}
 
