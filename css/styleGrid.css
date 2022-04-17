@@ -2,8 +2,6 @@
     .site {
         grid-template-columns: 12em 1fr;
         grid-template-rows: auto 1fr auto;
-
-
     }
 }
 
@@ -16,6 +14,7 @@
 
 }
 
+
 .img {
     background-image: url(/shell.jpg);
     background-size: 90%;
@@ -24,23 +23,22 @@
 }
 
 .masthead {
-    grid-row: 1;
     grid-column: span 2;
-    border: black solid;
     text-align: center;
-    background-color: black;
 }
 
 
 h1 {
+    font-size: 34pt;
     color: coral;
 }
 
-h2 {
+h2 {font-size: 24pt;
     color: lime;
 }
 
-
+h3{font-size: 21pt;
+    color: rgb(151, 211, 245);}
 
 nav {
     display: inline;
@@ -71,6 +69,7 @@ aside {
 footer {
     box-sizing: border-box;
     height: 50px;
+    font-size: 21pt;
     color: aquamarine;
     background-color: rgb(4, 38, 70);
     grid-column: span 2;
