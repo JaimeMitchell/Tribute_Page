@@ -7,15 +7,14 @@
 
 .site {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr auto ;
     background-color: black;
 
 }
 
 
-.img {
+img {display: inline;
     background-image: url(/shell.jpg);
     background-size: 90%;
     background-repeat: no-repeat;
@@ -29,19 +28,25 @@
 
 
 h1 {
-    font-size: 34pt;
+    font-size: 100pt;
     color: coral;
+    border-radius: 1em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h2 {font-size: 24pt;
-    color: lime;
+h2 {font-size: 42pt;
+    color: #579f57;
+    border-radius: 1em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h3{font-size: 21pt;
-    color: rgb(151, 211, 245);}
+h3{font-size: 24pt;
+    color: rgb(57, 113, 146);
+    border-radius: 1em;
+    font-family: 'Times New Roman', Times, serif;}
+    
 
 nav {
-    display: inline;
     background-color: black;
     border: solid black;
 
@@ -53,12 +58,16 @@ ul li {
     text-align: center;
     background-color: black;
     border: black solid;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 21pt;
+    line-height: 1.5em;
 }
 
 p {
     color: aliceblue;
     text-align: center;
     background-color: black;
+    font-size: 14pt;
 }
 
 aside {
@@ -69,7 +78,7 @@ aside {
 footer {
     box-sizing: border-box;
     height: 50px;
-    font-size: 21pt;
+    font-size: 24pt;
     color: aquamarine;
     background-color: rgb(4, 38, 70);
     grid-column: span 2;
