@@ -1,19 +1,96 @@
-body{
-    display:grid;
+body {
+    background-image: url(../shellBackground.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: grid;
     grid-template-areas:
-    "header header header"
-    "content content aside"
-    "footer footer aside"
+        "header header  main  main"
+        "aside  aside  main main"
+        "footer footer  main main";
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit,minmax(10px,1fr));
+    ;
+    /* gap: 0 50px; */
 }
-header{}
-h1{}
-h2{}
-h3{}
-p{}
-main{}
-article{}
-ul{}
-li{}
-aside{}
-footer{}
 
+header {
+    grid-area: header;
+    /* display: grid; */
+    justify-content: center;
+    grid-template-areas: "h1" "h2" "h3" "p";
+    grid-template-rows: repeat(auto-fit, minmax(100px,1fr ));
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+ 
+}
+
+header h1 {
+    /* grid-area: h1; */
+    text-align: center;
+    font-size: 100pt;
+    color: coral;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h2 {
+    /* grid-area: h2; */
+    text-align: center;
+    font-size: 42pt;
+    color: #579f57;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h3 {
+    /* grid-area: h3; */
+    text-align: center;
+    font-size: 24pt;
+    color: rgb(57, 113, 146);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+header p {
+    /* grid-area: p; */
+    font-size: 14pt;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+main {
+    grid-area: main;
+ 
+}
+
+ul li {
+    color: antiquewhite;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21pt;
+    line-height: 1.5em;
+}
+
+aside {
+    display: flex;
+    justify-content:flex-end;
+
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-self:flex-end;
+    height: 50px;
+    font-size: 24pt;
+    color: aquamarine;
+    background-color: rgba(4, 55, 104, 0.579);
+    border-radius: .25em;;
+    text-align: center;
+    border: black 20 px solid;
+}
+
+a {
+    font-family: im;
+    color: rgb(80, 255, 243);
+    
+}
