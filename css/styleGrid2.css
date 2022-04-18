@@ -72,8 +72,7 @@ ul li {
 aside {
     display: flex;
     justify-content:flex-end;
-
-    grid-area: aside;
+    /* grid-area: aside; */
 }
 
 footer {
