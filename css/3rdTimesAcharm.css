@@ -1,0 +1,72 @@
+.bodyContainer{
+    background:url(../img/shell.jpg) left no-repeat ;
+    background-color: black;
+    background-size:100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    width: 95vw;
+    height: 95vh;
+    display:grid;
+    grid-template-areas: 
+    "ad1 empty1 feed1 feed1 empty2 ad2"
+    "ad1 empty1 feed1 feed1 empty2 ad2"
+    "ad1 empty1 feed1 feed1 empty2 ad2"
+    "ad1 empty1 feed2 feed2 empty2 ad2"
+    "ad1 empty1 feed2 feed2 empty2 ad2"
+    "footer footer footer footer footer footer"
+    ;
+    /* grid-template-columns: repeat(auto-fit); */
+   
+  
+    }
+.child{
+   box-shadow: 1px 1px 1px 1px black;
+   margin: 1%;
+}
+/* This is the house of BoxOne. WHERE THE RULES ARE MADE */
+#boxOne{
+    grid-area: ad1;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+   flex-direction: column;
+
+}
+#boxTwo{
+    grid-area: ad2;
+}
+#boxThree{
+    grid-area: feed1;
+}
+#boxFour{grid-area: feed2;
+}
+#boxFive{grid-area: footer;
+    display:flex;
+    border: green solid 2px;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+
+.boxOneItems{border:blue solid 1px;
+height:50px;
+width:50px;
+}
+
+.boxFiveItems{border:green solid 1px;
+height:50px;
+width: 50px;}
+.boxFiveItems2{border:green solid 1px;background-color: blue;
+    height:50px;
+    width: 50px;}
+
+
+
+
+
+
+
+
+
