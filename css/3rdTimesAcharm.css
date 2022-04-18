@@ -1,6 +1,6 @@
 .bodyContainer{
-    background:url(../img/shell.jpg) left no-repeat ;
-    background-color: black;
+    background:url(../img/shell.jpg) bottom no-repeat ;
+    /* background-color: black; */
     background-size:100%;
     background-repeat: no-repeat;
     border: 1px solid black;
