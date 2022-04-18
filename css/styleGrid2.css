@@ -1,15 +1,17 @@
 body {
-    background-image: url(../shellBackground.jpg);
+    background-image: url(../img/shellBackground.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-areas:
         "header header  main  main"
         "aside  aside  main main"
         "footer footer  main main";
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit,minmax(10px,1fr));
-    ;
+    ; */
     /* gap: 0 50px; */
 }
 
