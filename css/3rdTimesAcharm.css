@@ -1,72 +1,68 @@
-.bodyContainer{
-    background:url(../img/shell.jpg) bottom no-repeat ;
-    /* background-color: black; */
-    background-size:100%;
+.bodyContainer {
+    /* background:url(../img/shell.jpg) bottom no-repeat ;
+    background-color: black;
+    background-size:100%; */
     background-repeat: no-repeat;
     border: 1px solid black;
-    width: 95vw;
-    height: 95vh;
-    display:grid;
-    grid-template-areas: 
-    "ad1 empty1 feed1 feed1 empty2 ad2"
-    "ad1 empty1 feed1 feed1 empty2 ad2"
-    "ad1 empty1 feed1 feed1 empty2 ad2"
-    "ad1 empty1 feed2 feed2 empty2 ad2"
-    "ad1 empty1 feed2 feed2 empty2 ad2"
-    "footer footer footer footer footer footer"
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header1 header1 header1 empty empty empty"
+        "header1 header1 header1 text1 text1 tex1t"
+        "empty empty1 empty text1 text1 tex1t"
+        "empty empty1 empty text1 text1 text1"
+        "empty empty1 empty text1 text1 text"
+        "footer1 footer1 footer1 footer1 img1 img1"
+        "footer1 footer1 footer1 footer1 img1 img1"
     ;
-    /* grid-template-columns: repeat(auto-fit); */
    
-  
-    }
-.child{
-   box-shadow: 1px 1px 1px 1px black;
-   margin: 1%;
 }
+
+.child {
+    box-shadow: 1px 1px 1px 1px black;
+    margin: 1%;
+}
+
 /* This is the house of BoxOne. WHERE THE RULES ARE MADE */
-#boxOne{
-    grid-area: ad1;
-    display:flex;
+#header1 {
+    grid-area: header1;
+    display: flex;
     justify-content: center;
-    align-items:center;
-   flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    justify-items: space-between;
 
 }
-#boxTwo{
-    grid-area: ad2;
+
+#text1 {
+    grid-area: text1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
-#boxThree{
-    grid-area: feed1;
-}
-#boxFour{grid-area: feed2;
-}
-#boxFive{grid-area: footer;
-    display:flex;
+.text1{width: min-content;}
+    
+    
+
+
+#footer1 {
+    grid-area: footer1;
+    display: flex;
     border: green solid 2px;
-    justify-content:center;
-    align-items:center;
-    flex-direction:row;
-    justify-content:space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
-
-.boxOneItems{border:blue solid 1px;
-height:50px;
-width:50px;
+#img1{grid-area: img1;
+display: flex;
+border: purple solid 5px;
+justify-items: center;
+align-content:center;
+flex-direction:column;
+justify-content: space-between;
 }
-
-.boxFiveItems{border:green solid 1px;
-height:50px;
-width: 50px;}
-.boxFiveItems2{border:green solid 1px;background-color: blue;
-    height:50px;
-    width: 50px;}
-
-
-
-
-
-
-
-
-
