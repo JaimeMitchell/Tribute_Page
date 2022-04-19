@@ -1,0 +1,68 @@
+.bodyContainer {
+    /* background:url(../img/shell.jpg) bottom no-repeat ;
+    background-color: black;
+    background-size:100%; */
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header1 header1 header1 empty empty empty"
+        "header1 header1 header1 text1 text1 tex1t"
+        "empty empty1 empty text1 text1 tex1t"
+        "empty empty1 empty text1 text1 text1"
+        "empty empty1 empty text1 text1 text"
+        "footer1 footer1 footer1 footer1 img1 img1"
+        "footer1 footer1 footer1 footer1 img1 img1"
+    ;
+   
+}
+
+.child {
+    box-shadow: 1px 1px 1px 1px black;
+    margin: 1%;
+}
+
+/* This is the house of BoxOne. WHERE THE RULES ARE MADE */
+#header1 {
+    grid-area: header1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-items: space-between;
+
+}
+
+#text1 {
+    grid-area: text1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text1{width: min-content;}
+    
+    
+
+
+#footer1 {
+    grid-area: footer1;
+    display: flex;
+    border: green solid 2px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+#img1{grid-area: img1;
+display: flex;
+border: purple solid 5px;
+justify-items: center;
+align-content:center;
+flex-direction:column;
+justify-content: space-between;
+}

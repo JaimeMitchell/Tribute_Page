@@ -78,7 +78,7 @@ aside {
 footer {
     box-sizing: border-box;
     height: 50px;
-    font-size: 24pt;
+    font-size: 14pt;
     color: aquamarine;
     background-color: rgb(4, 38, 70);
     grid-column: span 2;
