@@ -1,40 +1,41 @@
 body {
-    background-image: url(../img/shellBackground.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    background-color: black;
     display: grid;
     grid-template-areas:
-        "header header  main  main"
-        "aside  aside  main main"
-        "footer footer  main main";
-    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit,minmax(10px,1fr));
-    ; */
-    /* gap: 0 50px; */
+        "header empty main main main"
+        " header empty main main"
+        "empty empty main main"
+        "footer footer empty img ";
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+    gap: 0 50px;
+    ;
+
 }
 
 header {
-    grid-area: header;
-    /* display: grid; */
+  grid-column-start: 1;
+    grid-column-end: 3;
+
+    display: grid;
     justify-content: center;
-    grid-template-areas: "h1" "h2" "h3" "p";
-    grid-template-rows: repeat(auto-fit, minmax(100px,1fr ));
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
- 
+    /* grid-template-areas: "h1""h2""h3""p"; */
+    /* grid-template-rows: repeat(auto-fit, minmax(100px,1fr ));
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+
 }
 
-header h1 {
-    /* grid-area: h1; */
+h1 {
     text-align: center;
+    position: relative;
+    left: 0;
     font-size: 100pt;
     color: coral;
     font-family: 'Times New Roman', Times, serif;
 }
 
 header h2 {
-    /* grid-area: h2; */
+    /* grid-area: header; */
     text-align: center;
     font-size: 42pt;
     color: #579f57;
@@ -42,7 +43,7 @@ header h2 {
 }
 
 header h3 {
-    /* grid-area: h3; */
+    /* grid-area: header; */
     text-align: center;
     font-size: 24pt;
     color: rgb(57, 113, 146);
@@ -50,17 +51,18 @@ header h3 {
 }
 
 
-header p {
-    /* grid-area: p; */
+. {
+    /* grid-area: header; */
     font-size: 14pt;
     color: aliceblue;
     text-align: center;
-    
+
 }
 
 main {
-    grid-area: main;
- 
+    flex: ;
+     grid-area: main;
+
 }
 
 ul li {
@@ -71,21 +73,22 @@ ul li {
     line-height: 1.5em;
 }
 
-aside {
+.img {
     display: flex;
     justify-content:flex-end;
-    /* grid-area: aside; */
+    grid-area: aside;
 }
 
 footer {
     grid-area: footer;
-    display: flex;
-    justify-self:flex-end;
+    /* display: flex; */
+    /* justify-self:flex-end; */
     height: 50px;
     font-size: 24pt;
     color: aquamarine;
     background-color: rgba(4, 55, 104, 0.579);
-    border-radius: .25em;;
+    border-radius: .25em;
+    ;
     text-align: center;
     border: black 20 px solid;
 }
@@ -93,5 +96,5 @@ footer {
 a {
     font-family: im;
     color: rgb(80, 255, 243);
-    
+
 }

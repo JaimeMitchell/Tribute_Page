@@ -1,68 +1,87 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 20px;
+    background-color:grey;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3em;
+
+
+}
+
 .bodyContainer {
     /* background:url(../img/shell.jpg) bottom no-repeat ;
     background-color: black;
     background-size:100%; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     border: 1px solid black;
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-areas:
-        "header1 header1 header1 empty empty empty"
-        "header1 header1 header1 text1 text1 tex1t"
-        "empty empty1 empty text1 text1 tex1t"
-        "empty empty1 empty text1 text1 text1"
-        "empty empty1 empty text1 text1 text"
-        "footer1 footer1 footer1 footer1 img1 img1"
-        "footer1 footer1 footer1 footer1 img1 img1"
+        "header header header ul ul ul"
+        "header header header ul ul ul"
+        "empty empty1 empty ul ul ul"
+        "empty empty1 empty ul ul ul"
+        "empty empty1 empty ul ul ul"
+        "empty footer footer footer img1 img1"
+        "empty footer footer footer img1 img1"
     ;
-   
 }
 
 .child {
-    box-shadow: 1px 1px 1px 1px black;
-    margin: 1%;
-}
-
-/* This is the house of BoxOne. WHERE THE RULES ARE MADE */
-#header1 {
-    grid-area: header1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     justify-items: space-between;
-
+    box-shadow: 1px 1px 1px 1px black;
+    margin: 1%;
 }
 
-#text1 {
-    grid-area: text1;
-    display: flex;
+/* This is the house of BoxOne. WHERE THE RULES ARE MADE */
+header {
+    grid-area: header;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items:center;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
-.text1{width: min-content;}
-    
-    
 
+ul {
+    grid-area: ul;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
 
-#footer1 {
-    grid-area: footer1;
-    display: flex;
+footer {
+    grid-area: footer;
     border: green solid 2px;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
 
 }
-#img1{grid-area: img1;
-display: flex;
-border: purple solid 5px;
-justify-items: center;
-align-content:center;
-flex-direction:column;
-justify-content: space-between;
+
+#img1 {
+    grid-area: img1;
+    border: purple solid 5px;
+    justify-items: center;
+    align-content: center;
+    flex-direction:column-reverse;
+    justify-content: space-between;
 }
